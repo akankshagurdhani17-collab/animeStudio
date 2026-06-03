@@ -38,7 +38,7 @@ def index():
                                                f"will be {n1} and the main character will"
                                                f"be {n2} with suppoting character{n3} and want other"
                                                f"characters as well of your choice to make story "
-                                               f"more intresting the story theme will be {n4} the main"
+                                               f"more intresting give name of each character along with dialogue.the story theme will be {n4} the main"
                                                f"character will have the special power {n5}"
                                                f"the tone of the story will be {n6}"
                                                f"total number of episodes will be {n7}"
