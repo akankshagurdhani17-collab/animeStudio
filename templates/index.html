@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime Story Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+    /* Put your image path here */
+    background:url('../static/download.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+}
+
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+    position:relative;
+    z-index:1;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+.title{
+    color:white;
+    text-align:center;
+    font-size:2rem;
+    font-weight:700;
+}
+
+.subtitle{
+    text-align:center;
+    color:#cbd5e1;
+    margin-top:8px;
+    margin-bottom:30px;
+    font-size:0.95rem;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    color:#f8fafc;
+    margin-bottom:8px;
+    font-size:0.9rem;
+}
+
+input,
+select{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    background:rgba(255,255,255,0.08);
+    color:white;
+    font-size:15px;
+}
+
+input::placeholder{
+    color:#94a3b8;
+}
+
+select option{
+    color:black;
+}
+
+.generate-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    cursor:pointer;
+    margin-top:10px;
+    font-size:16px;
+    font-weight:600;
+    background:white;
+    transition:0.3s;
+}
+
+.generate-btn:hover{
+    transform:translateY(-2px);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h1 class="title">✨ Anime Story Studio</h1>
+        <p class="subtitle">Create your own anime universe</p>
+
+        <form method="post">
+
+            <div class="form-group">
+                <label>Enter Name</label>
+                <input type="text" name="inp8" id="">
+            </div>
+
+            <div class="form-group">
+                <label>Genre</label>
+                <select name="inp1">
+                    <option>--Choose One--</option>
+                    <option value="Shonen">Shonen</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Isekai">Isekai</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Comedy">Comedy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Main Character</label>
+                <select name="inp2">
+                    <option>--Choose One--</option>
+                    <option value="Doraemon">Doraemon</option>
+                    <option value="Nobita">Nobita</option>
+                    <option value="Shinchan">Shinchan</option>
+                    <option value="Naruto">Naruto</option>
+                    <option value="Goku">Goku</option>
+                    <option value="Dragon Ball Z">Dragon Ball Z</option>
+                    <option value="Eren yeager">Eren yeager</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Main Supporting Character</label>
+                <select name="inp3">
+                    <option>--Choose One--</option>
+                    <option value="Family">Family</option>
+                    <option value="Nobita">Nobita</option>
+                    <option value="Shinchan">Shinchan</option>
+                    <option value="Friends">Friends</option>
+                    <option value="Goku">Goku</option>
+                    <option value="Dragon Ball Z">Dragon Ball Z</option>
+                    <option value="Doraemon">Doraemon</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Story Theme</label>
+                <input name="inp4" type="text" placeholder="Friendship & Revenge">
+            </div>
+
+            <div class="form-group">
+                <label>Special Power</label>
+                <input name="inp5" type="text" placeholder="Time Manipulation">
+            </div>
+
+            <div class="form-group">
+                <label>Tone</label>
+                <select name="inp6">
+                    <option>--Choose One--</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Emotional">Emotional</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Episodes</label>
+                <input name="inp7" type="number" placeholder="12">
+            </div>
+
+            <button class="generate-btn">
+                Generate Anime 🚀
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
