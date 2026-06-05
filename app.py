@@ -48,7 +48,8 @@ def index():
                                                f"all episodes and give good background in every image according {n4} theme mentioned in story so that user can relate"
                                                f"it"
                                                f"Do not add extra information on the page just provide pure html content"
-                                               f"as a result"
+                                               f"as a result and give option to dowload all epipsoes "
+                                               f"in one click"
         )
 
         return render_template('result.html',result=response.text)
