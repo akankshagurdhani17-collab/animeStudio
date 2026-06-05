@@ -45,10 +45,10 @@ def index():
                                                f"create good and modern story episodes in html "
                                                f"format with character's pictures and"
                                                f"good graphics just like we watch on tv of every character in "
-                                               f"all episodes and give good background in every image according {n4} theme mentioned in story so that user can relate"
-                                               f"it"
+                                               f"all episodes and give good background in every image according {n4} theme mentioned"
+                                               f"in story so that user can relate it"
                                                f"Do not add extra information on the page just provide pure html content"
-                                               f"as a result and give option to dowload all epipsoes "
+                                               f"as a result and give option to dowload all epipsodes "
                                                f"in one click"
         )
 
